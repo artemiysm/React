@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  // Импортируем Link для роутинга
 import './Header.css';
 import logo from '../img/logo.png';
 
@@ -11,11 +12,21 @@ const Header = () => {
             </div>
             <nav className="nav">
                 <ul className="nav-list">
-                    <li><button>Главная</button></li>
-                    <li><button>Курсы</button></li>
-                    <li><button>Трудоустройство</button></li>
-                    <li><button>Контакты</button></li>
-                    <li><button>Авторизация</button></li>
+                    <li>
+                        <Link to="/" className="nav-link">Главная</Link>
+                    </li>
+                    <li>
+                        <Link to="/course" className="nav-link">Курсы</Link> {/* Переход на страницу курсов */}
+                    </li>
+                    <li>
+                        <Link to="/employment" className="nav-link">Трудоустройство</Link>
+                    </li>
+                    <li>
+                        <Link to="/contacts" className="nav-link">Контакты</Link>
+                    </li>
+                    <li>
+                        <Link to="/login" className="nav-link">Авторизация</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
