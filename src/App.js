@@ -1,8 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Убираем Switch, используем Routes
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  // Используем Routes вместо Switch
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import Footer from './components/Footer';
+import Contacts from './page/Contacts'; 
+import Employment from './page/Employment'
+import Sign from './page/Sign';
 import './styles/App.css';
 import Course from './page/Course';
 import icon1 from './img/mark.png'; 
@@ -16,10 +18,12 @@ const App = () => {
     return (
         <Router>
             <div className="app">
+                {/* Один раз рендерим Header, Sidebar и Footer */}
                 <Header />
                 <div className="main-content">
                     <Sidebar />
                     <main className="page-content">
+                        {/* Блок с описанием и преимуществами */}
                         <div className="description">
                             <h2>Освой программирование и IT с нуля до профессионала</h2>
                             <p>
@@ -60,12 +64,14 @@ const App = () => {
                         </div>
                     </main>
                 </div>
-                <Footer />
             </div>
 
             {/* Роутинг */}
             <Routes>
                 <Route path="/course" element={<Course />} />
+                <Route path="/contacts" element={<Contacts />} />
+                <Route path='/employment' element={<Employment/>} />
+                <Route path="/sign" element={<Sign />} />
             </Routes>
         </Router>
     );
