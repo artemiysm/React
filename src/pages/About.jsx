@@ -2,7 +2,7 @@
 
 import React from "react";
 import "../styles/About.css";
-import logo from '../images/monkey.png'
+
 const About = () => {
   return (
     <div className="courses-page">
