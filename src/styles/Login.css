@@ -1,71 +1,88 @@
-/* src/styles/Login.css */
-
 .login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.login-card {
+  background: #f9f9f9;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+.login-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.login-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  background-color: #333;
+}
+
+.login-footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.login-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Адаптивность для экранов до 768px */
+@media (max-width: 768px) {
   .login-card {
-    background: #f9f9f9;
-    padding: 40px 30px;
-    border-radius: 16px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 350px;
+    padding: 30px 20px;
+    width: 90%;
   }
-  
-  .login-logo {
-    width: 120px;
-    margin-bottom: 20px;
-  }
-  
-  .login-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .login-form label {
-    text-align: left;
-    margin-bottom: 5px;
-    margin-top: 10px;
-    font-weight: 500;
-  }
-  
+
   .login-form input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+    padding: 8px;
   }
-  
+
   .login-button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #444;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
+    padding: 8px;
   }
-  
-  .login-button:hover {
-    background-color: #333;
-  }
-  
+
   .login-footer {
-    margin-top: 20px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
-  
-  .login-footer a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .login-footer a:hover {
-    text-decoration: underline;
-  }
-  
+}

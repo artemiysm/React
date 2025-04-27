@@ -1,70 +1,86 @@
-/* src/styles/Employment.css */
-
 .employment-page {
-    padding: 20px;
-  }
-  
-  .employment-image {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 20px;
-  }
-  
-  .employment-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
+  padding: 20px;
+}
+
+.employment-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.employment-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.employment-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.employment-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.employment-content h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.employment-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.employment-content li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.employment-content li::before {
+  content: "🚀";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.employment-footer {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.employment-contact {
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+.employment-contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.employment-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Адаптивность для экранов до 768px */
+@media (max-width: 768px) {
   .employment-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .employment-content p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-  }
-  
-  .employment-content h3 {
     font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
   }
-  
-  .employment-content ul {
-    list-style-type: none;
-    padding: 0;
+
+  .employment-content h3 {
+    font-size: 18px;
   }
-  
+
   .employment-content li {
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 20px;
+    font-size: 1rem;
   }
-  
-  .employment-content li::before {
-    content: "🚀";
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  
-  .employment-footer {
-    margin-top: 20px;
-    font-weight: bold;
-  }
-  
+
   .employment-contact {
-    margin-top: 20px;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
-  
-  .employment-contact a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .employment-contact a:hover {
-    text-decoration: underline;
-  }
-  
+}
